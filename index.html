@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Realtime Node Socket.io Chat App</title>
+
+    <!-- Import Socket.io client library from the server -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+    <!-- Link to the JavaScript file for client-side chat functionality -->
+    <script defer src="js/client.js"></script>
+
+    <!-- Link to the external stylesheet for page styling -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation bar (commented out, can be uncommented if needed) -->
+<nav>
+    <!--    <div class="logo">-->
+    <!--        <img src="chat.png" alt="">-->
+    <!--    </div>-->
+</nav>
+
+<!-- Chat container to display chat messages -->
+<div class="container">
+    <!-- Example chat messages -->
+    <div class="message right">Harry: Hey how are you?</div>
+    <div class="message left">Rohan: Bhai I am fine. How about you</div>
+</div>
+
+<!-- Send message input form -->
+<div class="send">
+    <form action="#" id="send-container">
+        <div class="input-wrapper">
+            <!-- Input field for typing the message -->
+            <input type="text" id="messageInp" />
+            <!-- Button to send the message -->
+            <button class="btn">Send</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
